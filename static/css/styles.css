@@ -1,0 +1,182 @@
+h1 {
+    text-decoration: none !important;
+}
+
+.custom-bg {
+    background-color: #203354;
+}
+
+.custom-row-bg {
+    background-color: #fcf7f8;
+}
+
+.gray-row-bg {
+  background-color: #e8e9eb;
+}
+
+.padded-title {
+    padding-top: 20px;
+}
+
+.square-image-container {
+    width: 100%;
+    /* or any size you want */
+    height: auto;
+    /* same as width to make it square */
+    aspect-ratio: 1/1;
+    /* this does the cropping */
+    object-fit: cover;
+    /* removes bottom space/line */
+}
+
+.oil-change-bg {
+    background-image:
+        linear-gradient(to bottom, rgba(32, 51, 84, .3), rgba(0, 0, 0, 1)),
+        url(../images/oil-change-car.png);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 90vh;
+}
+
+.primary-bg {
+  background-color: #fcf7f8;
+  height: 100vh;
+  background-size: cover;
+}
+
+.gradient-text {
+    background: linear-gradient(to bottom, #ffcc88, #ff7733);
+    /* Adjust gradient colors as needed */
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    /* This makes the text color transparent, showing the gradient */
+    display: inline-block;
+    /* Required for background-clip to work */
+    font-size: 4rem;
+    /* Your desired font size */
+    font-weight: bold;
+    /* Bold text */
+    filter: drop-shadow(4px 4px #203354);
+    font-size: 48px;
+}
+
+/*
+
+.accordion-button.collapsed::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+
+.accordion-button:not(.collapsed)::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+
+.accordion-header .accordion-button {
+    text-align: center !important;
+    justify-content: center !important;
+    display: flex !important;
+    align-items: center !important;
+    display:block;
+    background-color: #022e41;
+    border: none;
+  }
+
+*/
+.accordion-header .accordion-button {
+  background-color: #fcf7f8;
+}
+  
+
+/* Assuming .side-rectangle is already defined with some styles like background, padding, etc. */
+.side-rectangle {
+    position: sticky; /* Make it stick during scroll */
+    top: 0; /* Align the top of the element with the top of the viewport */
+    align-self: flex-start; /* Align to the top of the flex container */
+    height: 100%; /* Fit the height to the content */
+    background-color: #e8e9eb;
+    border-radius: 10px 0 0 10px;
+    padding: 30px 12px 30px 12px;
+  }
+  
+  .btn {
+    display: flex;
+    justify-content: space-between; /* This separates the labels */
+    align-items: center;
+  }
+  
+  .button-label-left,
+  .button-label-right {
+    flex: 1; /* This allows the labels to take up equal space */
+  }
+  
+  .button-label-left {
+    font-size: 1.25rem;
+    text-align: left;
+    text-transform: uppercase;
+    font-weight: 550;
+    
+  }
+  
+  .button-label-right {
+    padding-right: 8px;
+    background: linear-gradient(to bottom, #ffcc88, #ff7733);
+    /* Adjust gradient colors as needed */
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    /* This makes the text color transparent, showing the gradient */
+    display: inline-block;
+    /* Required for background-clip to work */
+    font-size: 2rem;
+    /* Your desired font size */
+    font-weight: bold;
+    /* Bold text */
+    filter: drop-shadow(2px 2px #000000);
+    font-style: italic;
+    transform: rotate(-2deg);
+    text-align: right;
+
+  }
+
+  
+  .inspections-bg {
+    background-image:
+        linear-gradient(to bottom, rgba(32, 51, 84, .4), rgba(0, 0, 0, 1)),
+        url(../images/inspections-background.png);
+    background-color: black;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 110%;
+}
+
+.inspections-rectangle {
+  position: sticky; /* Make it stick during scroll */
+  top: 0; /* Align the top of the element with the top of the viewport */
+  align-self: flex-start; /* Align to the top of the flex container */
+  height: 100%; /* Fit the height to the content */
+  background-color: rgba(32, 51, 84, 0.55);
+  max-width: 100%;
+  border-radius: 4px;
+  padding-top: 12px;
+  padding-left: 12px;
+  padding-right: 8px;
+  padding-bottom: 12px;
+}
+
+.metallic-text {
+  font-size: 60px;
+  font-weight: bold;
+  color: #555;
+  background: linear-gradient(45deg, #757575, #ffffff, #757575);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  text-shadow: 
+      0 2px 2px rgba(255,255,255,0.5), 
+      0 -1px 1px rgba(0,0,0,0.2), 
+      1px 0 1px rgba(0,0,0,0.2), 
+      -1px 0 1px rgba(0,0,0,0.2);
+}
+

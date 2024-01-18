@@ -1,0 +1,156 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="">
+  <div class="oil-change-bg">
+    <div class="container text-sm-center pb-5">
+      <h1 class="pt-5 gradient-text">AFFORDABLE OIL CHANGES AT DEEBS</h1>
+      <h4 class="pt-3">All oil changes come with an oil filter replacement. These prices do not apply to European makes.
+      </h4>
+    </div>
+
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-sm-12 col-lg-10 pb-4">
+          <div class="accordion-flex-container pb-3">
+            <div class="accordion" id="oilChangeAccordion">
+              <!-- Full Synthetic Oil Change -->
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFullSynthetic">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseFullSynthetic" aria-expanded="false" aria-controls="collapseFullSynthetic">
+                    <span class="button-label-left">Full Synthetic Oil Change</span>
+                    <span class="button-label-right">$78.99</span>
+                  </button>
+                </h2>
+                <div id="collapseFullSynthetic" class="accordion-collapse collapse"
+                  aria-labelledby="headingFullSynthetic" data-bs-parent="#oilChangeAccordion">
+                  <div class="accordion-body">
+                    <strong>Details about the Full Synthetic Oil Change:</strong>
+                    <p>Experience superior engine performance with our Full Synthetic Oil Change.
+                      Designed for modern engines, it provides the highest level of lubrication, extreme temperature
+                      performance,
+                      and fuel efficiency. Ideal for drivers seeking peak engine performance and longevity.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingSyntheticBlend">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseSyntheticBlend" aria-expanded="false"
+                    aria-controls="collapseSyntheticBlend">
+                    <span class="button-label-left">Synthetic Blend Oil Change</span>
+                    <span class="button-label-right">$71.99</span>
+                  </button>
+                </h2>
+                <div id="collapseSyntheticBlend" class="accordion-collapse collapse"
+                  aria-labelledby="headingSyntheticBlend" data-bs-parent="#oilChangeAccordion">
+                  <div class="accordion-body">
+                    <strong>Details about the Synthetic Blend Oil Change:</strong>
+                    <p>Get the best of both worlds with our Synthetic Blend Oil Change.
+                      Combining synthetic and conventional oils, it offers better protection than standard oil,
+                      especially under severe driving conditions, without the full cost of a full synthetic change.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingConventional">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseConventional" aria-expanded="false" aria-controls="collapseConventional">
+                    <span class="button-label-left">Conventional Oil Change</span>
+                    <span class="button-label-right">$59.99</span>
+                  </button>
+                </h2>
+                <div id="collapseConventional" class="accordion-collapse collapse" aria-labelledby="headingConventional"
+                  data-bs-parent="#oilChangeAccordion">
+                  <div class="accordion-body">
+                    <strong>Details about the Conventional Oil Change:</strong>
+                    <p>Our Conventional Oil Change offers a reliable and affordable solution for your engine's needs.
+                      Perfect for older vehicles or those with simpler engine designs, it provides all the protection
+                      your
+                      engine needs for normal driving conditions.</p>
+                  </div>
+                </div>
+              </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingHighMileage">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapseHighMileage" aria-expanded="false" aria-controls="collapseHighMileage">
+                      <span class="button-label-left">High Mileage Oil Change</span>
+                      <span class="button-label-right">$59.99</span>
+                    </button>
+                  </h2>
+                  <div id="collapseHighMileage" class="accordion-collapse collapse" aria-labelledby="headingHighMileage"
+                    data-bs-parent="#oilChangeAccordion">
+                    <div class="accordion-body">
+                      <strong>Details about the High Mileage Oil Change:</strong>
+                      <p>Tailored for vehicles with over 75,000 miles, our High Mileage Oil Change helps extend engine
+                        life.
+                        This oil is specially formulated to reduce oil burn-off and leaks, while also minimizing wear
+                        and
+                        tear on older engines.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="pb-5 gray-row-bg pt-5" style="font-size:18px;">
+      <div class="container text-sm-center text-lg-start">
+        <h1 class="" style="font-size: 50px;">31%</h1>
+        <p class="pb-2" style="font-size: 19px;">of drivers admit to ignoring an overdue oil change. If there's one
+          thing you shouldn't ignore, it's probably this.</p>
+        <div class="row">
+          <div class="col d-flex justify-content-lg-start justify-content-sm-center">
+            <button type="button" class="btn btn-primary btn-lg text-center" style="border-radius: 30px;">DON'T
+              PROCRASTINATE</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="pb-5 custom-row-bg pt-5" style="font-size:20px;">
+      <div class="container text-sm-center text-lg-end">
+        <h1 class="" style="font-size: 36px;">What happens if I keep putting off my next oil change?</h1>
+        <div class="row justify-content-sm-center justify-content-lg-end">
+          <div class="col-lg-8 col-sm-12">
+            <p class="pb-2" style="font-size: 19px;">Horrible things happen. Delaying an oil change can lead to a
+              buildup of sludge and debris in the engine,
+              which hampers its efficiency and can cause damage over time. The old, dirty oil becomes less effective at
+              lubricating the engine parts, increasing friction and wear,
+              potentially leading to overheating and accelerated engine wear. Over time, this can result in decreased
+              fuel efficiency,
+              as well as the possibility of severe engine damage.</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col d-flex justify-content-lg-end justify-content-sm-center">
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="pb-5 gray-row-bg pt-5" style="font-size:18px;">
+      <div class="container text-sm-center text-lg-start">
+        <div class="row justify-content-sm-center justify-content-lg-start">
+          <div class="col-lg-8 col-sm-12">
+            <h1 class="" style="font-size: 36px;">What does the oil change entail?</h1>
+            <p class="pb-2" style="font-size: 19px;">An oil change at Deebs Auto Service is a 30-minute process that involves draining the old engine oil and replacing it with new oil. 
+              Additionally, the service includes the replacement of the oil filter. This regular maintenance helps in maintaining engine efficiency and prolonging its lifespan. 
+              The service is focused on ensuring the vehicle's engine operates with clean and effective lubrication.
+            </p>
+        <div class="row">
+          <div class="col d-flex justify-content-lg-start justify-content-sm-center">
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    {% endblock %}
