@@ -1,0 +1,60 @@
+{% extends 'base.html' %}
+{% block content %}
+    <div class="brakes-bg">
+        <div class="container pb-3">
+            <div class="row text-center">
+                <div class="col">
+                    <h1 class="gradient-text pt-4">CONTACT US</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="gray-row-bg pt-3 pb-3">
+        <div class="container mt-5">
+            <div class="row">
+                <!-- Contact Information -->
+                <div class="col-lg-6 col-sm-12 mb-4">
+                    <h2>Contact Information</h2>
+                    <p><strong>Deebs Auto Service</strong><br>
+                        1234 Car Street<br>
+                        Auto City, AC 12345</p>
+
+                    <p><strong>Phone:</strong> (123) 456-7890<br>
+                        <strong>Email:</strong> a.debow@deebsautoservice.com
+                    </p>
+
+                    <p><strong>Hours:</strong><br>
+                        Monday - Friday: 9:00 AM - 5:00 PM<br>
+                        Saturday: 10:00 AM - 2:00 PM<br>
+                        Sunday: Closed</p>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="col-lg-6 col-sm-12">
+                    <h2>Send Us an Email</h2>
+                    <form>
+                        <div class="mb-3">
+                            <label for="fullName" class="form-label">Full Name</label>
+                            <input type="text" class="form-control" id="fullName" placeholder="Your Full Name">
+                        </div>
+                        <div class="mb-3">
+                            <label for="emailAddress" class="form-label">Email Address</label>
+                            <input type="email" class="form-control" id="emailAddress" placeholder="Your Email Address">
+                        </div>
+                        <div class="mb-3">
+                            <label for="phoneNumber" class="form-label">Phone Number</label>
+                            <input type="tel" class="form-control" id="phoneNumber" placeholder="Your Phone Number">
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea class="form-control" id="message" rows="3" placeholder="Your Message"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

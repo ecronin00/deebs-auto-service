@@ -1,0 +1,78 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    <div class="ac-diagnosis-bg">
+
+        <div class="container">
+            <div class="row justify-content-center">
+                <h1 class="pt-4 text-sm-center gradient-text outlined-text;">AIR CONDITIONING
+                    DIAGNOSIS AT DEEBS
+                </h1>
+
+                <h4 class="gradient-text text-sm-center pb-4"
+                    style="font-size: 26px; filter: drop-shadow(1px 1px #203354);">
+                    We may not fix it, but we can certainly tell you what's wrong with it.</h4>
+            </div>
+        </div>
+    </div>
+
+    <div class="pt-4 pb-4">
+        <div class="container">
+            <div class="row justify-content-lg-center text-sm-center">
+                <div class="col col-md-8 col-lg-6 justify-content-lg-start">
+                    <h1>Here's what your car feels like</h1>
+                    <p>We used complex AI tools to simulate what it feels like to be in a hot car in the summer.
+                        The results were staggering.</p>
+                    <img src="../static/images/hot-car.png" class="square-image-container"
+                        style="height: 500px; width: auto;">
+
+                        <div class="d-flex justify-content-sm-center pt-4">
+                            <button type="button" class="btn btn-primary btn-lg text-sm-center"
+                                style="border-radius: 20px; padding: 14px;">SCHEDULE SERVICE</button>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="gray-row-bg">
+        <div class="container">
+            <div class="row justify-content-lg-center">
+                <div class="col col-lg-8">
+
+                    <h1 class="pt-4">Here's what could be wrong</h1>
+                    <h3>Refrigerant Leak</h3>
+                    <p>The most common AC issue, where refrigerant escapes due to system leaks, reducing the system's
+                        cooling capacity.
+                        Repairs may involve sealing leaks
+                        and recharging refrigerant, costing between $200 and $1000.
+                    </p>
+
+                    <h3 class="pt-2">Faulty Compressor</h3>
+                    <p>The compressor pressurizes the refrigerant and propels
+                        it through the AC system; its failure means no cooling.
+                        Replacement, including labor, can cost around $1,100 (according to
+                        <a
+                            href="https://www.jdpower.com/cars/shopping-guides/how-much-does-it-cost-to-replace-an-ac-compressor#:~:text=The%20cost%20to%20replace%20a,parts%20from%20%24650%20to%20%24840.">JDPower</a>)
+                        including labor.
+                    </p>
+
+                    <h3>Electrical Issues</h3>
+                    <p>Electrical faults can include blown fuses, relay problems, or faulty wiring, 
+                        all of which disrupt the power supply to the AC system. Repair costs including labor can range from $150 to $900.
+                    </p>
+
+                    <h3>Clogged Fitler</h3>
+                    <p>This is what Jiffy Lube tries to sell everyone with an oil change. The cabin air filter cleans incoming air; when clogged, 
+                        it restricts airflow and diminishes AC efficiency. Replacement costs, including labor, are generally between $20 to $100.
+                    </p>
+
+                    <p><strong>*</strong>Note that prices may vary depending on the severity of the issue, 
+                        the vehicle's make and model, and the region. It is advisable to get a personalized quote from DEEBS AUTO SERVICE.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
