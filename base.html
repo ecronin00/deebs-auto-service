@@ -10,7 +10,7 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link rel="stylesheet" href="../static/css/styles.css">
 
     <title>Hello, world!</title>
 </head>
@@ -21,7 +21,7 @@
     <div class="">
         <nav class="navbar navbar-expand-lg navbar-dark pt-2 pb-2" style="background-color: #022e41;">
             <div class="container">
-                <a class="navbar-brand" href="/home">
+                <a class="navbar-brand" href="index.html">
                     <img src="static/images/logo.png" width="80" height="80" alt="">
                 </a>
                 <h5 class="navbar-brand">DEEBS AUTO SERVICE</h5>
@@ -36,7 +36,7 @@
                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
                     <ul class="navbar-nav ms-auto"> <!-- ms-auto to align to the right -->
                         <li class="nav-item">
-                            <a class="nav-link" style="color: #ffffff" href="/home">HOME</a>
+                            <a class="nav-link" style="color: #ffffff" href="index.html">HOME</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" style="color: #ffffff" href="#"
@@ -45,14 +45,14 @@
                                 SERVICES
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <li><a class="dropdown-item" href="/state-inspections">State Inspections</a></li>
-                                <li><a class="dropdown-item" href="/brakes">Brakes</a></li>
-                                <li><a class="dropdown-item" href="/ac-diagnosis">A/C Diagnosis</a></li>
-                                <li><a class="dropdown-item" href="/oil-changes">Oil Changes</a></li>
+                                <li><a class="dropdown-item" href="state-inspections.html">State Inspections</a></li>
+                                <li><a class="dropdown-item" href="brakes.html">Brakes</a></li>
+                                <li><a class="dropdown-item" href="ac-diagnosis.html">A/C Diagnosis</a></li>
+                                <li><a class="dropdown-item" href="oil-changes.html">Oil Changes</a></li>
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" style="color: #ffffff" href="/contact">CONTACT</a>
+                            <a class="nav-link" style="color: #ffffff" href="contact.html">CONTACT</a>
                         </li>
                     </ul>
                 </div>
