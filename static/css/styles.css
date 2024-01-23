@@ -230,6 +230,10 @@ p, li {
   text-align: left;
 }
 
+.indented {
+  text-indent: 20px;
+}
+
 
 
 
