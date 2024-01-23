@@ -1,78 +1,138 @@
-{% extends 'base.html' %}
+<!-- base.html -->
+<!DOCTYPE html>
+<html lang="en">
 
-{% block content %}
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<div class="">
-  <div class="oil-change-bg">
-    <div class="container text-sm-center pb-5">
-      <h1 class="pt-5 gradient-text">AFFORDABLE OIL CHANGES AT DEEBS</h1>
-      <h4 class="pt-3">All oil changes come with an oil filter replacement. These prices do not apply to European makes.
-      </h4>
-    </div>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="static/css/styles.css">
 
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-sm-12 col-lg-10 pb-4">
-          <div class="accordion-flex-container pb-3">
-            <div class="accordion" id="oilChangeAccordion">
-              <!-- Full Synthetic Oil Change -->
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="headingFullSynthetic">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#collapseFullSynthetic" aria-expanded="false" aria-controls="collapseFullSynthetic">
-                    <span class="button-label-left">Full Synthetic Oil Change</span>
-                    <span class="button-label-right">$78.99</span>
-                  </button>
-                </h2>
-                <div id="collapseFullSynthetic" class="accordion-collapse collapse"
-                  aria-labelledby="headingFullSynthetic" data-bs-parent="#oilChangeAccordion">
-                  <div class="accordion-body">
-                    <strong>Details about the Full Synthetic Oil Change:</strong>
-                    <p>Experience superior engine performance with our Full Synthetic Oil Change.
-                      Designed for modern engines, it provides the highest level of lubrication, extreme temperature
-                      performance,
-                      and fuel efficiency. Ideal for drivers seeking peak engine performance and longevity.</p>
+  <title>Hello, world!</title>
+</head>
+
+<body>
+  <!-- Common header, navbar, etc. -->
+
+  <div class="">
+    <nav class="navbar navbar-expand-lg navbar-dark pt-2 pb-2" style="background-color: #022e41;">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img src="static/images/logo.png" width="80" height="80" alt="">
+        </a>
+        <h5 class="navbar-brand">DEEBS AUTO SERVICE</h5>
+
+        <!-- Toggler for mobile view -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ms-auto"> <!-- ms-auto to align to the right -->
+            <li class="nav-item">
+              <a class="nav-link" style="color: #ffffff" href="index.html">HOME</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" style="color: #ffffff" href="#" id="navbarDropdownMenuLink"
+                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                SERVICES
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item" href="state-inspections.html">State Inspections</a></li>
+                <li><a class="dropdown-item" href="brakes.html">Brakes</a></li>
+                <li><a class="dropdown-item" href="ac-diagnosis.html">A/C Diagnosis</a></li>
+                <li><a class="dropdown-item" href="oil-changes.html">Oil Changes</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" style="color: #ffffff" href="contact.html">CONTACT</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+
+  <div class="">
+    <div class="oil-change-bg">
+      <div class="container text-sm-center pb-5">
+        <h1 class="pt-5 gradient-text">AFFORDABLE OIL CHANGES AT DEEBS</h1>
+        <h4 class="pt-3">All oil changes come with an oil filter replacement. These prices do not apply to European
+          makes.
+        </h4>
+      </div>
+
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-sm-12 col-lg-10 pb-4">
+            <div class="accordion-flex-container pb-3">
+              <div class="accordion" id="oilChangeAccordion">
+                <!-- Full Synthetic Oil Change -->
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingFullSynthetic">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapseFullSynthetic" aria-expanded="false"
+                      aria-controls="collapseFullSynthetic">
+                      <span class="button-label-left">Full Synthetic Oil Change</span>
+                      <span class="button-label-right">$78.99</span>
+                    </button>
+                  </h2>
+                  <div id="collapseFullSynthetic" class="accordion-collapse collapse"
+                    aria-labelledby="headingFullSynthetic" data-bs-parent="#oilChangeAccordion">
+                    <div class="accordion-body">
+                      <strong>Details about the Full Synthetic Oil Change:</strong>
+                      <p>Experience superior engine performance with our Full Synthetic Oil Change.
+                        Designed for modern engines, it provides the highest level of lubrication, extreme temperature
+                        performance,
+                        and fuel efficiency. Ideal for drivers seeking peak engine performance and longevity.</p>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="headingSyntheticBlend">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#collapseSyntheticBlend" aria-expanded="false"
-                    aria-controls="collapseSyntheticBlend">
-                    <span class="button-label-left">Synthetic Blend Oil Change</span>
-                    <span class="button-label-right">$71.99</span>
-                  </button>
-                </h2>
-                <div id="collapseSyntheticBlend" class="accordion-collapse collapse"
-                  aria-labelledby="headingSyntheticBlend" data-bs-parent="#oilChangeAccordion">
-                  <div class="accordion-body">
-                    <strong>Details about the Synthetic Blend Oil Change:</strong>
-                    <p>Get the best of both worlds with our Synthetic Blend Oil Change.
-                      Combining synthetic and conventional oils, it offers better protection than standard oil,
-                      especially under severe driving conditions, without the full cost of a full synthetic change.</p>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingSyntheticBlend">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapseSyntheticBlend" aria-expanded="false"
+                      aria-controls="collapseSyntheticBlend">
+                      <span class="button-label-left">Synthetic Blend Oil Change</span>
+                      <span class="button-label-right">$71.99</span>
+                    </button>
+                  </h2>
+                  <div id="collapseSyntheticBlend" class="accordion-collapse collapse"
+                    aria-labelledby="headingSyntheticBlend" data-bs-parent="#oilChangeAccordion">
+                    <div class="accordion-body">
+                      <strong>Details about the Synthetic Blend Oil Change:</strong>
+                      <p>Get the best of both worlds with our Synthetic Blend Oil Change.
+                        Combining synthetic and conventional oils, it offers better protection than standard oil,
+                        especially under severe driving conditions, without the full cost of a full synthetic change.
+                      </p>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="headingConventional">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#collapseConventional" aria-expanded="false" aria-controls="collapseConventional">
-                    <span class="button-label-left">Conventional Oil Change</span>
-                    <span class="button-label-right">$59.99</span>
-                  </button>
-                </h2>
-                <div id="collapseConventional" class="accordion-collapse collapse" aria-labelledby="headingConventional"
-                  data-bs-parent="#oilChangeAccordion">
-                  <div class="accordion-body">
-                    <strong>Details about the Conventional Oil Change:</strong>
-                    <p>Our Conventional Oil Change offers a reliable and affordable solution for your engine's needs.
-                      Perfect for older vehicles or those with simpler engine designs, it provides all the protection
-                      your
-                      engine needs for normal driving conditions.</p>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingConventional">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapseConventional" aria-expanded="false" aria-controls="collapseConventional">
+                      <span class="button-label-left">Conventional Oil Change</span>
+                      <span class="button-label-right">$59.99</span>
+                    </button>
+                  </h2>
+                  <div id="collapseConventional" class="accordion-collapse collapse"
+                    aria-labelledby="headingConventional" data-bs-parent="#oilChangeAccordion">
+                    <div class="accordion-body">
+                      <strong>Details about the Conventional Oil Change:</strong>
+                      <p>Our Conventional Oil Change offers a reliable and affordable solution for your engine's needs.
+                        Perfect for older vehicles or those with simpler engine designs, it provides all the protection
+                        your
+                        engine needs for normal driving conditions.</p>
+                    </div>
                   </div>
                 </div>
-              </div>
                 <div class="accordion-item">
                   <h2 class="accordion-header" id="headingHighMileage">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
@@ -141,16 +201,33 @@
         <div class="row justify-content-sm-center justify-content-lg-start">
           <div class="col-lg-8 col-sm-12">
             <h1 class="" style="font-size: 36px;">What does the oil change entail?</h1>
-            <p class="pb-2" style="font-size: 19px;">An oil change at Deebs Auto Service is a 30-minute process that involves draining the old engine oil and replacing it with new oil. 
-              Additionally, the service includes the replacement of the oil filter. This regular maintenance helps in maintaining engine efficiency and prolonging its lifespan. 
+            <p class="pb-2" style="font-size: 19px;">An oil change at Deebs Auto Service is a 30-minute process that
+              involves draining the old engine oil and replacing it with new oil.
+              Additionally, the service includes the replacement of the oil filter. This regular maintenance helps in
+              maintaining engine efficiency and prolonging its lifespan.
               The service is focused on ensuring the vehicle's engine operates with clean and effective lubrication.
             </p>
-        <div class="row">
-          <div class="col d-flex justify-content-lg-start justify-content-sm-center">
-            
+            <div class="row">
+              <div class="col d-flex justify-content-lg-start justify-content-sm-center">
+
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-    </div>
 
-    {% endblock %}
+        <!-- Common footer, scripts, etc. -->
+        <!-- Optional JavaScript; choose one of the two! -->
+
+        <!-- Option 1: Bootstrap Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+          crossorigin="anonymous"></script>
+
+        <!-- Option 2: Separate Popper and Bootstrap JS -->
+        <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>

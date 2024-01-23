@@ -1,7 +1,66 @@
-{% extends 'base.html' %}
+<!-- base.html -->
+<!DOCTYPE html>
+<html lang="en">
 
-{% block content %}
- 
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="static/css/styles.css">
+
+    <title>Hello, world!</title>
+</head>
+
+<body>
+    <!-- Common header, navbar, etc. -->
+
+    <div class="">
+        <nav class="navbar navbar-expand-lg navbar-dark pt-2 pb-2" style="background-color: #022e41;">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="static/images/logo.png" width="80" height="80" alt="">
+                </a>
+                <h5 class="navbar-brand">DEEBS AUTO SERVICE</h5>
+
+                <!-- Toggler for mobile view -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav ms-auto"> <!-- ms-auto to align to the right -->
+                        <li class="nav-item">
+                            <a class="nav-link" style="color: #ffffff" href="index.html">HOME</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" style="color: #ffffff" href="#"
+                                id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                SERVICES
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="state-inspections.html">State Inspections</a></li>
+                                <li><a class="dropdown-item" href="brakes.html">Brakes</a></li>
+                                <li><a class="dropdown-item" href="ac-diagnosis.html">A/C Diagnosis</a></li>
+                                <li><a class="dropdown-item" href="oil-changes.html">Oil Changes</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" style="color: #ffffff" href="contact.html">CONTACT</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+
     <div class="brakes-bg">
 
         <div class="container">
@@ -43,16 +102,16 @@
                                     </div>
                                 </div>
                                 <div class="carousel-item pt-1 pb-1">
-                                    <img src="../static/images/brake-rotor.png" class="d-block w-100 carousel-image pb-5"
-                                        alt="...">
+                                    <img src="../static/images/brake-rotor.png"
+                                        class="d-block w-100 carousel-image pb-5" alt="...">
                                     <div class="carousel-caption carousel-text">
                                         <h5>Brake Rotors</h5>
                                         <p>Brake rotors are discs that brake pads clamp down on to halt wheel spin.</p>
                                     </div>
                                 </div>
                                 <div class="carousel-item pt-1 pb-1">
-                                    <img src="../static/images/brake-fluid.png" class="d-block w-100 carousel-image pb-5"
-                                        alt="...">
+                                    <img src="../static/images/brake-fluid.png"
+                                        class="d-block w-100 carousel-image pb-5" alt="...">
                                     <div class="carousel-caption carousel-text">
                                         <h5>Brake Fluid</h5>
                                         <p>Brake fluid transmits pedal force into braking power.</p>
@@ -100,15 +159,15 @@
             </div>
         </div>
     </div>
-    
+
     <div class="pb-5 gray-row-bg pt-5" style="font-size:20px;">
-      <div class="container text-lg-start">
+        <div class="container text-lg-start">
             <div class="row justify-content-center">
                 <div class="column col-lg-8 pt-3">
                     <h1>When to Replace Rotors</h1>
                     <h4>Mileage</h4>
-                    <p >Every 30,000 to 70,000 miles</p>
-                    <h5 >Warning Signs</h5>
+                    <p>Every 30,000 to 70,000 miles</p>
+                    <h5>Warning Signs</h5>
                     <ul class="" style="padding-left: 12px;">
                         <li class="brakes-list">Pulsating brake pedal</li>
                         <li class="brakes-list">Visible scoring or grooves</li>
@@ -132,4 +191,19 @@
         </div>
     </div>
 
-{% endblock %}
+    <!-- Common footer, scripts, etc. -->
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
